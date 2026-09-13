@@ -209,7 +209,7 @@ if uploaded_file is not None:
                         x=0.5
                     )
                 )
-                st.plotly_chart(fig_custom, use_container_width=True)
+                st.plotly_chart(fig_custom, use_container_width=True, config={'displayModeBar': True, 'scrollZoom': True})
             else:
                 st.info(f"👈 กรุณาเลือกพารามิเตอร์ของ {selected_msg} ที่ช่องด้านบนเพื่อแสดงกราฟ")
 
